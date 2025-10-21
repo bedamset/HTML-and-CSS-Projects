@@ -1,0 +1,23 @@
+table {
+  border-collapse: collapse;
+  width: 60%;
+  margin: 20px auto;
+  background-color: #f2f2f2; /* Background color */
+  color: #333333;            /* Font color */
+  border: 2px solid #000000;  /* Table border */
+}
+
+th, td {
+  border: 1px solid #000000; /* Cell border */
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #4CAF50; /* Header background color */
+  color: white;              /* Header font color */
+}
+
+tr:hover {
+  background-color: #ddd;     /* Hover effect */
+}

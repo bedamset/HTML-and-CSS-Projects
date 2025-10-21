@@ -1,0 +1,21 @@
+/* Text color and alignment rules */
+.red-text {
+  color: red;
+  text-align: left;
+}
+
+.blue-text {
+  color: blue;
+  text-align: center;
+}
+
+.green-text {
+  color: green;
+  text-align: right;
+}
+
+.centered-red {
+  color: red;
+  text-align: center;
+  font-size: 20px;
+}

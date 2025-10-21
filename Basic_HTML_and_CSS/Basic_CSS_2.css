@@ -1,0 +1,9 @@
+.myStyle {
+  color: snow;
+  background-color: black;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  text-shadow: 2px 2px 5px gray;
+}
