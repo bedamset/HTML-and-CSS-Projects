@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Space Station</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #000;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+      margin: 0 15px;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1, h2 {
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 16px;
+      max-width: 700px;
+      margin: 0 auto 20px;
+      line-height: 1.5;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 30px auto 0;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      border-top: 1px solid #ccc;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Space Station</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reservations">Reservations</a>
+    </nav>
+  </header>
+
+  <!-- HOME SECTION -->
+  <section id="home">
+    <h2>Welcome to Space Station</h2>
+    <p>This website was created for the Space Station HTML & CSS Assignment, dated <b>October 22, 2025</b>.</p>
+    <p>Explore amazing pictures of planets, galaxies, and spacecraft. Book your interstellar adventure today!</p>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <p>Explore beautiful images from space.</p>
+    <div class="gallery">
+      <img src="Images/Thumb/thumbnail_1.jpeg" alt="International Space Station orbiting Earth">
+      <img src="Images/Thumb/thumbnail_2.jpeg" alt="Earth from space with clouds and oceans">
+      <img src="Images/Thumb/thumbnail_3.jpeg" alt="Mars surface with rocks and terrain">
+      <img src="Images/Thumb/thumbnail_4.jpeg" alt="Astronaut floating in space during a spacewalk">
+      <img src="Images/Thumb/thumbnail_5.jpeg" alt="Planet Jupiter with visible stripes and Great Red Spot">
+      <img src="Images/Thumb/thumbnail_6.jpeg" alt="The Milky Way galaxy stretching across the night sky">
+      <img src="Images/Thumb/thumbnail_7.jpeg" alt="Saturn with its rings clearly visible">
+      <img src="Images/Thumb/thumbnail_8.jpeg" alt="Space shuttle launching into orbit">
+    </div>
+  </section>
+
+  <!-- RESERVATIONS SECTION -->
+  <section id="reservations">
+    <h2>Reservations</h2>
+    <p>Fill out the form below to book your space mission!</p>
+
+    <form>
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname" placeholder="Enter your first name">
+
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname" placeholder="Enter your last name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Special requests"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2025 Space Station | HTML & CSS Assignment
+  </footer>
+
+</body>
+</html>
