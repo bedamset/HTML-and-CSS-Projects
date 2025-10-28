@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic CSS Demo Website</title>
+
+    <!-- Local favicon -->
+    <link rel="icon" type="image/x-icon" href="C:\Users\pbeda\Documents\GitHub\HTML-and-CSS-Projects\Project\Images\Icons\favicon.ico">
+
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background-color: rgba(8, 141, 165, 1);
+            text-align: center;
+            color: #fff;
+            text-shadow: 1px 0.5px 4px rgba(0,0,0,0.6);
+        }
+
+        /* Dropdown Menu */
+        .menu-container {
+            width: 100%;
+            background-color: #184352;
+            position: relative;
+            padding: 10px 0;
+        }
+
+        ul.menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        ul.menu li {
+            position: relative;
+            margin: 0 10px;
+            padding: 12px 20px;
+            background-color: #387593;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        ul.menu li:hover {
+            background-color: #5EAFDF;
+        }
+
+        /* Submenu dropdown */
+        ul.menu li ul.submenu {
+            display: none;
+            position: absolute;
+            top: 45px;
+            left: 0;
+            background-color: #B3B3B3;
+            border-radius: 5px;
+            padding: 0;
+            min-width: 150px;
+        }
+
+        ul.menu li:hover ul.submenu {
+            display: block;
+        }
+
+        ul.menu li ul.submenu li {
+            display: block;
+            padding: 10px;
+            margin: 0;
+            color: #184352;
+            background-color: #B3B3B3;
+        }
+
+        ul.menu li ul.submenu li:hover {
+            background-color: #387593;
+            color: #fff;
+        }
+
+        /* Container for squares */
+        .container {
+            width: 450px;
+            height: 450px;
+            margin: 50px auto;
+            background-color: #faebd7;
+            border: 2px solid black;
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+        }
+
+        /* Squares with icon images */
+        .squares {
+            width: 100px;
+            height: 100px;
+            background-color: #fff;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 5px;
+            cursor: pointer;
+            transition: transform 0.5s;
+            background-size: 60px 60px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        /* Assign each square an icon */
+        .squares:nth-child(1) {
+            background-image: url("C:\Users\pbeda\Documents\GitHub\HTML-and-CSS-Projects\Project\Images\Icons\icons.png");
+        }
+        .squares:nth-child(2) {
+            background-image: url("C:\Users\pbeda\Documents\GitHub\HTML-and-CSS-Projects\Project\Images\Icons\icons2.png");
+        }
+        .squares:nth-child(3) {
+            background-image: url("C:\Users\pbeda\Documents\GitHub\HTML-and-CSS-Projects\Project\Images\Icons\icons3.png");
+        }
+        .squares:nth-child(4) {
+            background-image: url("C:\Users\pbeda\Documents\GitHub\HTML-and-CSS-Projects\Project\Images\Icons\icons4.png");
+        }
+
+        /* Hover animations */
+        .squares:hover {
+            transform: scale(1.15);
+        }
+
+        .squares:nth-child(1):hover { background-color: #13b4ff; }
+        .squares:nth-child(2):hover { background-color: #d861af; }
+        .squares:nth-child(3):hover { background-color: #81205f; }
+        .squares:nth-child(4):hover { background-color: #77b800; }
+    </style>
+</head>
+
+<body>
+
+    <!-- Dropdown menu -->
+    <div class="menu-container">
+        <ul class="menu">
+            <li>Home</li>
+            <li>About
+                <ul class="submenu">
+                    <li>Our Story</li>
+                    <li>Team</li>
+                </ul>
+            </li>
+            <li>Services
+                <ul class="submenu">
+                    <li>Web Design</li>
+                    <li>SEO</li>
+                </ul>
+            </li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <!-- Icon Squares -->
+    <div class="container">
+        <div class="squares"></div>
+        <div class="squares"></div>
+        <div class="squares"></div>
+        <div class="squares"></div>
+    </div>
+
+</body>
+</html>
