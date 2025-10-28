@@ -1,0 +1,4 @@
+/* Hover scale effect */
+.photo-container:hover img {
+  transform: scale(1.5);
+}

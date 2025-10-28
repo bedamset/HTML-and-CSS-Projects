@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Space Station | Resort</title>
+  <link rel="stylesheet" href="./css/photo style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      color: #000;
+    }
+
+    /* NAVIGATION */
+    .wrap {
+      width: 100%;
+      background-color: #0d335d;
+    }
+
+    .menu-container {
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    .menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    .menu a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+
+    /* CONTAINER & TEXT */
+    .container {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .text-center span {
+      font-size: 30px;
+      font-weight: bold;
+      color: #0d335d;
+    }
+
+    /* GALLERY SECTION */
+    #gallery {
+      text-align: center;
+      padding: 30px 0;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px;
+    }
+
+    .photo-container {
+      position: relative;
+      width: 250px;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+    }
+
+    .photo-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    /* Hover scale increased to 1.5 */
+    .photo-container:hover img {
+      transform: scale(1.5);
+    }
+
+    .photo-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      padding: 15px;
+    }
+
+    .photo-container:hover .photo-overlay {
+      opacity: 1;
+    }
+
+    /* LIGHTBOX */
+    #lightbox {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    #lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border: 5px solid #fff;
+      border-radius: 8px;
+    }
+
+    /* FOOTER */
+    #footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #0d335d;
+      color: #fff;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <div class="wrap">
+    <div class="menu-container">
+      <ul class="menu">
+        <a href="#gallery"><li>GALLERY</li></a>
+      </ul>
+    </div>
+  </div>
+  <!-- END NAV -->
+
+  <!-- HOME -->
+  <div class="container">
+    <div class="text-center">
+      <span>The Space Station</span>
+    </div>
+  </div>
+  <!-- END HOME -->
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <h1>Gallery</h1>
+    <div class="flex-container">
+
+      <!-- PHOTO CONTAINER 1 -->
+      <div class="photo-container">
+        <img src="Images/Thumb/thumbnail_1.jpeg" alt="International Space Station orbiting Earth">
+        <div class="photo-overlay">
+          <h3>Click to Enlarge</h3>
+          <p>We have several space launches departing daily, book your flight today!</p>
+        </div>
+      </div>
+
+      <!-- PHOTO CONTAINER 2 -->
+      <div class="photo-container">
+        <img src="Images/Thumb/thumbnail_2.jpeg" alt="Earth from space with clouds and oceans">
+        <div class="photo-overlay">
+          <h3>Click to Enlarge</h3>
+          <p>We have several space launches departing daily, book your flight today!</p>
+        </div>
+      </div>
+
+      <!-- PHOTO CONTAINER 3 -->
+      <div class="photo-container">
+        <img src="Images/Thumb/thumbnail_3.jpeg" alt="Mars surface with rocks and terrain">
+        <div class="photo-overlay">
+          <h3>Click to Enlarge</h3>
+          <p>We have several space launches departing daily, book your flight today!</p>
+        </div>
+      </div>
+
+      <!-- PHOTO CONTAINER 4 -->
+      <div class="photo-container">
+        <img src="Images/Thumb/thumbnail_4.jpeg" alt="Astronaut floating in space during a spacewalk">
+        <div class="photo-overlay">
+          <h3>Click to Enlarge</h3>
+          <p>We have several space launches departing daily, book your flight today!</p>
+        </div>
+      </div>
+
+      <!-- PHOTO CONTAINER 5 -->
+      <div class="photo-container">
+        <img src="Images/Thumb/thumbnail_5.jpeg" alt="Planet Jupiter with visible stripes and Great Red Spot">
+        <div class="photo-overlay">
+          <h3>Click to Enlarge</h3>
+          <p>We have several space launches departing daily, book your flight today!</p>
+        </div>
+      </div>
+
+      <!-- PHOTO CONTAINER 6 -->
+      <div class="photo-container">
+        <img src="Images/Thumb/thumbnail_6.jpeg" alt="The Milky Way galaxy stretching across the night sky">
+        <div class="photo-overlay">
+          <h3>Click to Enlarge</h3>
+          <p>We have several space launches departing daily, book your flight today!</p>
+        </div>
+      </div>
+
+      <!-- PHOTO CONTAINER 7 -->
+      <div class="photo-container">
+        <img src="Images/Thumb/thumbnail_7.jpeg" alt="Saturn with its rings clearly visible">
+        <div class="photo-overlay">
+          <h3>Click to Enlarge</h3>
+          <p>We have several space launches departing daily, book your flight today!</p>
+        </div>
+      </div>
+
+      <!-- PHOTO CONTAINER 8 -->
+      <div class="photo-container">
+        <img src="Images/Thumb/thumbnail_8.jpeg" alt="Space shuttle launching into orbit">
+        <div class="photo-overlay">
+          <h3>Click to Enlarge</h3>
+          <p>We have several space launches departing daily, book your flight today!</p>
+        </div>
+      </div>
+
+      <!-- PHOTO CONTAINER 9 -->
+      <div class="photo-container">
+        <img src="Images/Thumb/thumbnail_9.jpeg" alt="">
+        <div class="photo-overlay">
+          <h3>Click to Enlarge</h3>
+          <p>We have several space launches departing daily, book your flight today!</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- END GALLERY -->
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox">
+    <img id="lightbox-img" src="">
+  </div>
+
+  <script>
+    const images = document.querySelectorAll('.photo-container img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImg.src = img.src;
+      });
+    });
+
+    lightbox.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+      lightboxImg.src = '';
+    });
+  </script>
+
+  <!-- RSVP SECTION -->
+  <section id="contact">
+    <!-- Form or contact info can go here -->
+  </section>
+  <!-- END RSVP -->
+
+  <!-- FOOTER -->
+  <div id="footer">
+    &copy; 2025 Space Station Resort | HTML & CSS Project
+  </div>
+  <!-- END FOOTER -->
+
+</body>
+</html>

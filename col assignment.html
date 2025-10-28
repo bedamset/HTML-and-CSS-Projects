@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Columns Example</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        col.col1 { background-color: #ffcccc; }
+        col.col2 { background-color: #ccffcc; }
+        col.col3 { background-color: #ccccff; }
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center;">Basic HTML Table with Columns</h2>
+
+    <table>
+        <colgroup>
+            <col class="col1">
+            <col class="col2">
+            <col class="col3">
+        </colgroup>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>Alice</td>
+            <td>25</td>
+            <td>New York</td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>30</td>
+            <td>London</td>
+        </tr>
+    </table>
+</body>
+</html>
