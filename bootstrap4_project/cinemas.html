@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <title>Academy Cinemas</title>
+
+    <style>
+      /* Glowing title for Accommodations */
+      .glow-title {
+        color: white;
+        text-shadow: 0 0 2px #fff, 0 0 3px #fff, 0 0 30px #4b0082, 0 0 40px #4b0082;
+        font-weight: bold;
+      }
+
+      /* Glowing border for image */
+      .glow-img {
+        border: 3px solid #fff;
+        box-shadow: 0 0 20px #4b0082;
+        border-radius: 10px;
+      }
+
+      /* Dark purple background */
+      .dark-purple-bg {
+        background-color: #4b0082;
+        color: white;
+        padding: 60px 20px;
+        border-radius: 10px;
+      }
+
+      /* Justified text */
+      .justify-text {
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4b0082;">
+      <div class="container position-relative py-3">
+        <!-- LEFT: NAV LINKS -->
+        <ul class="navbar-nav position-absolute" style="left: 0; top: 50%; transform: translateY(-50%);">
+          <li class="nav-item mx-3">
+            <a class="nav-link text-white h5" href="#about">About</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-white h5" href="#showtimes">Showtimes</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-white h5" href="#deals">Deals</a>
+          </li>
+        </ul>
+
+        <!-- RIGHT: SEARCH -->
+        <form class="form-inline position-absolute" style="right: 0; top: 50%; transform: translateY(-50%);">
+          <input class="form-control mr-2" type="search" placeholder="Search">
+          <button class="btn btn-light" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <div class="d-flex flex-column align-items-center justify-content-center text-center text-white" style="background-color: #4b0082; padding: 80px 20px;">
+      <h1 class="display-3 font-weight-bold">ACADEMY CINEMAS</h1>
+      <p class="lead mt-3">Sit back, relax, and enjoy the show...</p>
+    </div>
+
+    <!-- ACCOMMODATIONS SECTION WITH IMAGE -->
+    <div class="container my-5 dark-purple-bg" id="about">
+      <div class="row align-items-center">
+        <!-- IMAGE -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="C:\Users\pbeda\Documents\GitHub\HTML-and-CSS-Projects\bootstrap4_project\Img\image6.jpg" class="img-fluid glow-img" alt="Accommodations">
+        </div>
+        <!-- TEXT + HEADING ON RIGHT -->
+        <div class="col-md-6 justify-text">
+          <h2 class="display-4 glow-title mb-4 text-right">Accommodations</h2>
+          <p><strong>Located in beautiful Portland, Oregon's Pearl district, our reels have been spinning since 1959.</strong></p>
+          <p><strong>Showing our guests a great time is our passion and seeing their smiles is our pleasure!</strong></p>
+          <p><strong>All of our auditoriums are equipped with brand new Christie sound systems!</strong></p>
+          <p><strong>Relax in our extra-wide, plush cushioning recliners. Our seating arrangement is disability friendly.</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- NOW PLAYING MOVIES WITH INFO PILL BADGES -->
+    <div class="container my-5" id="showtimes">
+      <h2 class="display-4 text-center mb-4">Now Playing</h2>
+      <div class="row">
+        <!-- Batman Begins -->
+        <div class="col-md-3 mb-4">
+          <div class="card h-100">
+            <img class="card-img-top" src="C:\Users\pbeda\Documents\GitHub\HTML-and-CSS-Projects\bootstrap4_project\Img\image1.jpg" alt="Batman Begins">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">Batman Begins</h5>
+              <p class="card-text">Action/Adventure. The Dark Knight rises from the shadows.</p>
+              <!-- Showtimes badges -->
+              <span class="badge badge-pill badge-info">12:00 p.m.</span>
+              <span class="badge badge-pill badge-info">1:30 p.m.</span>
+              <span class="badge badge-pill badge-info">3:00 p.m.</span>
+              <span class="badge badge-pill badge-info">5:30 p.m.</span>
+              <span class="badge badge-pill badge-info">7:00 p.m.</span>
+              <span class="badge badge-pill badge-info">9:30 p.m.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lord of the Rings -->
+        <div class="col-md-3 mb-4">
+          <div class="card h-100">
+            <img class="card-img-top" src="C:\Users\pbeda\Documents\GitHub\HTML-and-CSS-Projects\bootstrap4_project\Img\image2.jpg" alt="Lord of the Rings">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">Lord of the Rings</h5>
+              <p class="card-text">Fantasy. The epic journey through Middle-Earth.</p>
+              <span class="badge badge-pill badge-info">12:00 p.m.</span>
+              <span class="badge badge-pill badge-info">1:30 p.m.</span>
+              <span class="badge badge-pill badge-info">3:00 p.m.</span>
+              <span class="badge badge-pill badge-info">5:30 p.m.</span>
+              <span class="badge badge-pill badge-info">7:00 p.m.</span>
+              <span class="badge badge-pill badge-info">9:30 p.m.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gladiator -->
+        <div class="col-md-3 mb-4">
+          <div class="card h-100">
+            <img class="card-img-top" src="C:\Users\pbeda\Documents\GitHub\HTML-and-CSS-Projects\bootstrap4_project\Img\image3.jpg" alt="Gladiator">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">Gladiator</h5>
+              <p class="card-text">Historical Drama. A hero rises in the arena for justice.</p>
+              <span class="badge badge-pill badge-info">12:00 p.m.</span>
+              <span class="badge badge-pill badge-info">1:30 p.m.</span>
+              <span class="badge badge-pill badge-info">3:00 p.m.</span>
+              <span class="badge badge-pill badge-info">5:30 p.m.</span>
+              <span class="badge badge-pill badge-info">7:00 p.m.</span>
+              <span class="badge badge-pill badge-info">9:30 p.m.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Star Wars -->
+        <div class="col-md-3 mb-4">
+          <div class="card h-100">
+            <img class="card-img-top" src="C:\Users\pbeda\Documents\GitHub\HTML-and-CSS-Projects\bootstrap4_project\Img\image5.jpg" alt="Star Wars">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">Star Wars</h5>
+              <p class="card-text">Sci-Fi. A legendary battle in a galaxy far, far away.</p>
+              <span class="badge badge-pill badge-info">12:00 p.m.</span>
+              <span class="badge badge-pill badge-info">1:30 p.m.</span>
+              <span class="badge badge-pill badge-info">3:00 p.m.</span>
+              <span class="badge badge-pill badge-info">5:30 p.m.</span>
+              <span class="badge badge-pill badge-info">7:00 p.m.</span>
+              <span class="badge badge-pill badge-info">9:30 p.m.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIGN-UP FORM -->
+    <div class="container my-5" id="deals">
+      <h2 class="display-4 text-center mb-4 font-weight-bold">Sign up for Movie Club Rewards!</h2>
+      <form class="w-50 mx-auto">
+        <div class="form-group">
+          <input type="email" class="form-control" placeholder="Enter email">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+      </form>
+      <p class="text-center mt-2">Movie Rewards • Movies • info@academycinemas.com</p>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-3">
+      &copy; 2025 Academy Cinemas
+    </footer>
+
+    <!-- JS SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
