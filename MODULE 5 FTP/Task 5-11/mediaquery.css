@@ -1,0 +1,13 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #fff8dc;
+  color: #000;
+}
+
+/* Media query: screens smaller than 600px */
+@media screen and (max-width: 600px) {
+  p {
+    color: blue;
+  }
+}
