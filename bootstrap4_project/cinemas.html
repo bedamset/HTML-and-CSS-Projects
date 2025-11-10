@@ -162,6 +162,76 @@
         </div>
       </div>
     </div>
+    
+<!-- Movie Deals Section -->
+<div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+  <div class="container">
+    <!-- Heading for Movie Deals -->
+    <h1 class="display-4" style="text-transform: uppercase;">Movie Deals</h1>
+    <!-- Description text -->
+    <p>Check out our monthly deals on movies!</p>
+    <!-- Button to open modal (deals info) -->
+    <button class="btn btn-outline-primary" data-toggle="modal" data-target="#movieDealsModal">
+      See Our Deals
+    </button>
+  </div>
+</div>
+
+<!-- Movie Deals Accordion (Bootstrap Component) -->
+<div class="container my-4">
+  <div id="movieDealsAccordion">
+    <!-- Accordion Card 1 -->
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h5 class="mb-0">
+          <!-- Button to toggle accordion -->
+          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            March Movie Deals
+          </button>
+        </h5>
+      </div>
+      <!-- Collapsible content -->
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#movieDealsAccordion">
+        <div class="card-body">
+          Buy 1 ticket, get 1 free on all action movies!
+        </div>
+      </div>
+    </div>
+
+    <!-- Accordion Card 2 -->
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            April Movie Deals
+          </button>
+        </h5>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#movieDealsAccordion">
+        <div class="card-body">
+          Free popcorn with any ticket purchased on Fridays!
+        </div>
+      </div>
+    </div>
+
+    <!-- Accordion Card 3 -->
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            May Movie Deals
+          </button>
+        </h5>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#movieDealsAccordion">
+        <div class="card-body">
+          Student discount: 20% off all movie tickets!
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <!-- SIGN-UP FORM -->
     <div class="container my-5" id="deals">
